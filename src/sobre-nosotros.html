@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <style>
+
+        .bg-primary { background-color: #2A4D73; } 
+        .bg-secondary { background-color: #3A6B58; } 
+        .bg-light { background-color: #E1F2F1; } 
+        .text-primary { color: #2A4D73; } 
+        .text-secondary { color: #3A6B58; } 
+        .text-light { color: #F4F6F6; } 
+        .swiper-container {
+            max-width: 100%;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .swiper-slide img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-light text-gray-800">
+
+    <nav>
+        <ul class="flex space-x-6 p-6 bg-primary text-light">
+            <li><a href="index.html" class="hover:underline font-semibold">Inicio</a></li>
+            <li><a href="sobre-nosotros.html" class="hover:underline font-semibold">Sobre Nosotros</a></li>
+            <li><a href="servicios.html" class="hover:underline font-semibold">Servicios</a></li>
+            <li><a href="contacto.html" class="hover:underline font-semibold">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="bg-primary text-light p-8 shadow-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-extrabold">Sobre Nosotros</h1>
+            <p class="text-lg mt-3.5 font-semibold">¡Conoce nuestra historia y lo que nos hace especiales!</p>
+        </div>
+    </header>
+
+    <section class="container mx-auto p-8 bg-white rounded-lg shadow-xl mt-8">
+        <h2 class="text-3xl font-bold text-primary mb-4">UN POCO SOBRE NOSOTROS</h2>
+        <p class="text-gray-700 mb-8">
+            En Birdy Books, creemos que la magia de los libros trasciende las páginas impresas. Nuestro compromiso no es solo ofrecerte una selección excepcional de títulos, sino crear un espacio donde la lectura se convierta en una experiencia enriquecedora y memorable. Desde el momento en que cruzas nuestras puertas, te invitamos a sumergirte en un refugio pensado para que cada visitante se sienta como en casa.
+        </p>
+        <p class="text-gray-700 mb-8">
+            Imagina un entorno acogedor, iluminado por la calidez de luces suaves y el olor inconfundible del papel nuevo. Cada rincón de nuestro local ha sido cuidadosamente diseñado para invitarte a la lectura y a la reflexión. Aquí, puedes elegir un cómodo sillón junto a la ventana, donde el suave murmullo de las páginas al pasar se mezcla con la tranquilidad de un ambiente sereno. Es un lugar donde puedes dejar volar tu imaginación y conectar con esos mundos lejanos que tanto amas.
+        </p>
+    </section>
+
+    <section class="container mx-auto p-8 relative">
+        <h2 class="text-3xl font-bold text-center text-primary mb-6">¡RECOMENDACIONES ESTELARES!</h2>
+        <div class="swiper-container max-w-5xl mx-auto">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/img-Carrucel/D_NQ_NP_908394-MLM53588449319_022023-O.png" alt="Imagen 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img-Carrucel/scale.png" alt="Imagen 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img-Carrucel/Warriors_series.png" alt="Imagen 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img-Carrucel/El Rastro y el ojo de voidrio.png" alt="Imagen 4">
+                </div>
+            </div>
+            <div class="swiper-button-next text-primary"></div>
+            <div class="swiper-button-prev text-primary"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="container mx-auto p-8 mt-8">
+        <div class="flex justify-between items-start">
+            <div class="w-full lg:w-1/2 bg-white shadow-lg rounded-lg p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-4 h-4 bg-primary rounded-full mr-2"></div>
+                    <p class="text-xl font-semibold text-gray-800">Más detalles sobre nosotros</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="gif-container flex items-center space-x-4">
+                        <img src="/img-Carrucel/200w.gif" alt="Pajarito 1" class="w-24 h-24 object-contain">
+                        <p class="text-gray-700">En el corazón de un pequeño pueblo, donde los árboles susurran canciones de viento y las aves trinan melodías, nació la idea de Birdy Books. Todo comenzó en una acogedora librería local, donde dos amigos, Laura y Miguel, se encontraban a menudo para compartir su amor por la lectura. Ambos soñaban con crear un espacio único que no solo vendiera libros, sino que también fomentara la conexión entre lectores de todas las edades.
+                            <br><br>
+                            Un día, mientras disfrutaban de un café en su rincón favorito de la librería, Laura propuso organizar un club de lectura. La idea resonó con Miguel, quien pensó que era una oportunidad perfecta para combinar su pasión por los libros con la comunidad. Así, decidieron llevar su sueño un paso más allá: fundar Birdy Books, un lugar donde cada libro encontraría un hogar y cada lector, un amigo.
+                        </p>
+                    </div>
+                    <div class="gif-container flex items-center space-x-4">
+                        <img src="/img-Carrucel/happy-bird.gif" alt="Pajarito 2" class="w-24 h-24 object-contain">
+                        <p class="text-gray-700"><p class="text-gray-700">La esencia de Birdy Books radica en su enfoque amigable y accesible; un espacio donde tanto niños como adultos pueden explorar mundos literarios. Los fundadores comenzaron a recopilar títulos cuidadosamente seleccionados, desde clásicos hasta novedades, incluyendo historias sobre la naturaleza, aventuras y fantasía. Cada sección de la tienda refleja su compromiso con la diversidad y la inclusión.
+                            <br><br>
+                            Además de vender libros, Birdy Books se convirtió en un punto de encuentro cultural. Organizaron lecturas, talleres de escritura y actividades para niños, convirtiendo el espacio en un refugio literario. Cada evento estaba lleno de risas y conversación, y en cada rincón se podía encontrar a alguien sumergido en una historia, ya sea en la sala de lectura o en el patio exterior adornado con flores y pájaros cantores.
+                            <br><br>
+                            Así, Birdy Books floreció, convirtiéndose en un símbolo de unión y amor por la literatura, donde cada página cuenta una historia y cada lector, un capítulo en la vida del lugar. Con el tiempo, Laura y Miguel no solo construyeron una librería, sino un hogar para todos los amantes de los libros.
+                    </div>
+                </div>
+                <div class="mt-4 text-center text-sm text-gray-600">
+                    <p>¡Laura y Miguel!</p>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 ml-8 mt-8 lg:mt-0">
+                <img src="/img-Carrucel/LittleNimoAi.com-Wallpaper-Minimalist-41.png" alt="Imagen de referencia" class="w-full h-auto rounded-lg">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-light p-8 text-center shadow-inner">
+        <p>&copy; 2024 Birdy Books.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            effect: 'fade',
+            fadeEffect: { crossFade: true },
+        });
+    </script>
+</body>
+</html>
+

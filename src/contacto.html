@@ -1,0 +1,195 @@
+<<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Birdy Books</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .reveal {
+            display: block;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-up {
+            animation: fadeUp 1.2s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .image-container {
+            height: 300px;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .image-container img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .spotify-embed {
+            border-radius: 12px;
+            overflow: hidden;
+            max-width: 100%;
+            height: 380px;
+        }
+
+        .easter-egg-zone {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .easter-egg-zone:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 16px;
+        }
+
+        .social-links a {
+            font-size: 1.5rem;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #4fd1c5;
+        }
+
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <header class="bg-teal-900 text-white py-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-semibold">BIRDY BOOKS</h1>
+            <nav>
+                <a href="index.html" class="text-white font-medium px-4 py-2 hover:bg-teal-700 rounded-md">Inicio</a>
+                <a href="sobre-nosotros.html" class="text-white font-medium px-4 py-2 hover:bg-teal-700 rounded-md">Sobre nosotros</a>
+                <a href="contacto.html" class="text-white font-medium px-4 py-2 hover:bg-teal-700 rounded-md">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-12">
+        <div class="container mx-auto text-center">
+
+            <section id="contacto-birdy-books" class="mb-16">
+                <h2 class="text-4xl font-bold text-teal-400 mb-6 fade-up">Contáctanos</h2>
+                <p class="text-lg mb-6">Si tienes alguna pregunta o deseas saber más sobre nuestros productos, ¡síguenos en nuestras redes sociales!</p>
+
+
+                <div class="social-links">
+                    <a href="https://open.spotify.com/user/spotify" target="_blank" class="hover:text-teal-300">
+                        <img src="/img-cafeteria/9.webp" alt="Spotify" width="120">
+                    </a>
+                    <a href="https://www.instagram.com/birdybooks" target="_blank" class="hover:text-teal-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="120">
+                    </a>
+                    <a href="https://www.tiktok.com/@birdybooks" target="_blank" class="hover:text-teal-300">
+                        <img src="/img-cafeteria/9.1.webp" alt="TikTok" width="120">
+                    </a>
+                </div>
+            </section>
+
+            <section id="contacto-desarrolladores" class="mb-16">
+                <h2 class="text-3xl font-bold text-teal-400 mb-4 fade-up">Contáctanos Directamente</h2>
+                <p class="text-lg text-gray-300 mb-6">Si deseas hablar directamente con los desarrolladores de Birdy Books, puedes contactarlos a través de sus correos electrónicos o redes sociales:</p>
+                <div class="flex justify-center gap-8">
+                    <div class="bg-teal-700 p-6 rounded-lg shadow-lg w-48 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <img src="/img-cafeteria/7.jpg" alt="Belen" class="w-full h-32 object-cover rounded-full mx-auto">
+                        <h3 class="mt-4 text-lg font-semibold text-white">Belen</h3>
+                        <p class="text-sm text-gray-200">Frontend Developer</p>
+                        <p class="mt-2 text-sm text-gray-400">Correo: <a href="mailto:belen@birdybooks.com" class="text-teal-300">belen@birdybooks.com</a></p>
+                        <p class="mt-2 text-sm text-gray-400">Instagram: <a href="https://instagram.com/Bel2099" class="text-teal-300">@BelRM2099</a></p>
+                    </div>
+                    <div class="bg-teal-700 p-6 rounded-lg shadow-lg w-48 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <img src="/img-cafeteria/8.jpg" alt="Pao" class="w-full h-32 object-cover rounded-full mx-auto">
+                        <h3 class="mt-4 text-lg font-semibold text-white">Paola</h3>
+                        <p class="text-sm text-gray-200">Backend Developer</p>
+                        <p class="mt-2 text-sm text-gray-400">Correo: <a href="mailto:pao@birdybooks.com" class="text-teal-300">PaolaMarily@birdybooks.com</a></p>
+                        <p class="mt-2 text-sm text-gray-400">Twitter: <a href="https://twitter.com/pao" class="text-teal-300">@Paora</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="playlist" class="mb-16">
+                <h2 class="text-3xl font-bold text-teal-400 mb-6 fade-up">Escucha Nuestra Playlist</h2>
+                <h3 class="text-1xl font-bold text-white mb-6 fade-up">Con musica de nuestros lectores</h3>
+                <div class="spotify-embed">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4bsUPJRZ9Sa66Uxc79f2jZ?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <div class="easter-egg-zone hidden">
+        <p class="text-white">¡Descubre el equipo de desarrollo!</p>
+    </div>
+
+    <div id="sorpresa" class="hidden bg-teal-700 p-6 rounded-lg shadow-lg mt-8">
+        <h3 class="text-lg font-semibold text-white">¡Surprise!</h3>
+        <p class="text-sm text-gray-200">Has descubierto una zona secreta de nuestro equipo. ¡Gracias por explorar!</p>
+    </div>
+
+    <script>
+
+        const easterEggZone = document.querySelector('.easter-egg-zone');
+        const sorpresaSection = document.getElementById('sorpresa');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                easterEggZone.classList.remove('hidden');
+            }
+        });
+
+        easterEggZone.addEventListener('click', () => {
+            sorpresaSection.classList.toggle('hidden');
+            sorpresaSection.classList.toggle('reveal');
+        });
+    </script>
+</body>
+
+</html>

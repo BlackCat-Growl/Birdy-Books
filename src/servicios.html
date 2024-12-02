@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+
+    .service-card:hover .image-hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-blue-50 font-sans text-gray-900">
+
+  <header class="bg-teal-600 text-white py-6">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-semibold">BIRDY BOOKS</h1>
+      <nav>
+        <a href="index.html" class="text-white font-medium px-4 py-2 hover:bg-teal-700 rounded-md">Inicio</a>
+        <a href="sobre-nosotros.html" class="text-white font-medium px-4 py-2 hover:bg-teal-700 rounded-md">Sobre nosotros</a>
+        <a href="contacto.html" class="text-white font-medium px-4 py-2 hover:bg-teal-700 rounded-md">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="servicios" class="py-16">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-teal-700 mb-8">Nuestros Servicios</h2>
+      <p class="text-lg text-gray-600 mb-12">Disfruta de un ambiente cómodo y acogedor mientras disfrutas de un buen libro y una bebida deliciosa.</p>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="service-card bg-green-100 shadow-lg rounded-lg p-6 hover:scale-105 transition-all hover:bg-green-200 relative">
+          <div class="text-teal-600 text-5xl mb-4">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12 mx-auto">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h18M3 12h18m-9 7h9"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-semibold mb-2 text-teal-800">¡IGUAL QUE EN CASA!</h3>
+          <p class="text-gray-500">Vive la experiencia de leer en un espacio cálido, con un ambiente relajante y acogedor.</p>
+          <img src="/img-Carrucel/rincon-de-lectura-02-1439x1080.jpg" alt="Imagen de ambiente acogedor" class="image-hover absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300">
+        </div>
+
+        <div class="service-card bg-blue-100 shadow-lg rounded-lg p-6 hover:scale-105 transition-all hover:bg-blue-200 relative">
+          <div class="text-teal-600 text-5xl mb-4">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12 mx-auto">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5v14h8V5H8zM4 7h16v2H4z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-semibold mb-2 text-teal-800">ALGO CALIENTITO</h3>
+          <p class="text-gray-500">¿Que es siempre bueno para acompañar un libro? <br> ¡Exacto! Un buen café o un té.</p>
+          <img src="/img-Carrucel/18526702-310b-40e8-85fd-8c3ea1385d31_source-aspect-ratio_1600w_0.jpg" alt="Imagen de café" class="image-hover absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300">
+        </div>
+
+        <div class="service-card bg-green-100 shadow-lg rounded-lg p-6 hover:scale-105 transition-all hover:bg-green-200 relative">
+          <div class="text-teal-600 text-5xl mb-4">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12 mx-auto">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 19v-6h12v6M6 9V4h12v5"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-semibold mb-2 text-teal-800">¡MAS AMBIENTE!</h3>
+          <p class="text-gray-500">Tambien ofrecemos audiolibros para que te sumergirte en tu historia.</p>
+          <img src="/img-Carrucel/audiolibros.jpg" alt="Imagen de eventos" class="image-hover absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="py-16 bg-blue-100">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-teal-700 mb-8">¿Quieres un spoiler?</h2>
+      <p class="text-lg text-gray-600 mb-12">Echa un vistazo a nuestro adorable refugio. Y así podrás estar listo para cuando quieras visitarnos.</p>
+  
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden relative group">
+          <img src="/img-cafeteria/1.jpg" alt="Imagen 1" class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <div class="absolute inset-0 bg-teal-500 opacity-0 group-hover:opacity-75 transition-opacity duration-300">
+            <div class="flex items-center justify-center h-full text-white text-lg font-semibold">
+              ¡Cafe a la orden!
+            </div>
+          </div>
+        </div>
+  
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden relative group">
+          <img src="/img-cafeteria/2.jpg" alt="Imagen 2" class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <div class="absolute inset-0 bg-teal-500 opacity-0 group-hover:opacity-75 transition-opacity duration-300">
+            <div class="flex items-center justify-center h-full text-white text-lg font-semibold">
+              Cafeteria lista para atenderte
+            </div>
+          </div>
+        </div>
+  
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden relative group">
+          <img src="/img-cafeteria/3.webp" alt="Imagen 3" class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <div class="absolute inset-0 bg-teal-500 opacity-0 group-hover:opacity-75 transition-opacity duration-300">
+            <div class="flex items-center justify-center h-full text-white text-lg font-semibold">
+              La zona central, lista para darte ambiente
+            </div>
+          </div>
+        </div>
+  
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden relative group">
+          <img src="/img-cafeteria/4.jpg" alt="Imagen 4" class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <div class="absolute inset-0 bg-teal-500 opacity-0 group-hover:opacity-75 transition-opacity duration-300">
+            <div class="flex items-center justify-center h-full text-white text-lg font-semibold">
+              ¡Sin paredes es mejor! <br> Terraza
+            </div>
+          </div>
+        </div>
+  
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden relative group">
+          <img src="/img-cafeteria/5.jpg" alt="Imagen 5" class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <div class="absolute inset-0 bg-teal-500 opacity-0 group-hover:opacity-75 transition-opacity duration-300">
+            <div class="flex items-center justify-center h-full text-white text-lg font-semibold">
+              Todo un mundo por explorar <br> 3 Pisos disponibles
+            </div>
+          </div>
+        </div>
+  
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden relative group">
+          <img src="/img-cafeteria/6.jpg" alt="Imagen 6" class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <div class="absolute inset-0 bg-teal-500 opacity-0 group-hover:opacity-75 transition-opacity duration-300">
+            <div class="flex items-center justify-center h-full text-white text-lg font-semibold">
+              Tambien hay espacio para tus polluelos
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="bg-teal-600 text-white py-6 mt-16">
+    <div class="max-w-7xl mx-auto text-center">
+        <p>&copy; Birdy Books</p>
+      <p>Diseñado con ♥ para los amantes de la lectura y el café.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+
+
